@@ -1,0 +1,20 @@
+{
+  "name": "mbt",
+  "version": "1.0.0",
+  "description": "first step: open in browser landing_page.html login with email: admin@gmail.com and password: 0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "ml-knn": "^3.0.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.14.0"
+  }
+}

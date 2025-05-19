@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mom and Baby</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffe3ec;
+            flex-direction: column;
+            width: 100vw;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none;
+            flex-direction: column;
+            align-items: center;
+        }
+        .active {
+            display: flex;
+        }
+        .logo {
+            width: 100px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .title {
+            color: #e91e63;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            align-self: center;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #e91e63;
+            color: white;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #d81b60;
+        }
+        .toggle-link {
+            margin-top: 10px;
+            cursor: pointer;
+            color: #e91e63;
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function showForm(formId) {
+            document.getElementById('loginForm').classList.remove('active');
+            document.getElementById('registerForm').classList.remove('active');
+            document.getElementById(formId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <div id="loginForm" class="container active">
+        <h1 class="title">Masuk</h1>
+        <input type="email" class="input-field" placeholder="Email">
+        <input type="password" class="input-field" placeholder="Kata Sandi">
+        <button class="button">Masuk</button>
+        <p class="toggle-link" onclick="showForm('registerForm')">Belum Punya Akun? Daftar</p>
+    </div>
+</body>
+</html>
